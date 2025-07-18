@@ -39,8 +39,8 @@ test-coverage: test-coverage-init
 	$(call banner-enter,$@)
 
 	$(RM) -r tests/results
-	@mkdir -p ./tests/results
-	@touch $(tests-coverage).out
+	mkdir -p ./tests/results
+	touch $(tests-coverage).out
 
 	@$(if $(LOCAL_FIX_PERMS),chmod 777 tests/results)
 
